@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IJCAI 2025 Tutorial: LLM-based Role-Playing from the Perspective of Hallucinations</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+              <span style="font-size: 80%">ACL 2023 Tutorial:</span><br />
+              Retrieval-based Language Models and Applications
+            </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <table>
+            <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/profile_yanwang.jpeg"></td>
+            </tr>
+              <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Yan Wang</a><sup>1</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Nuo Chen</a><sup>2</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Xinting Huang</a><sup>1</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Hongqiu Wu</a><sup>3</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Jiaan Wang</a><sup>1</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Leyang Cui</a><sup>1</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Deng Cai</a><sup>4</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://libertywing.github.io/yanwang.github.io/" style="border-radius: 50%">Shuming Shi</a><sup>5</sup></td>
+              </tr>
+            </table>
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>[affiliate1]</span>
+            <span class="author-block"><sup>2</sup>[affiliate2]</span>
+            <span class="author-block"><sup>3</sup>[affiliate3]</span>
+            <span class="author-block"><sup>4</sup>[affiliate4]</span>
+            <span class="author-block"><sup>5</sup>[affiliate5]</span>
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <b>Thursday, August 28 to Sunday, August 31, 2025. @ Guangzhou</b>
+          </div>
+          
+          <!--<div class="is-size-6 publication-authors">
+            For those who have not registered to IJCAI: we will release video recordings after the tutorial
+          </div>
+          <br />-->
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About this tutorial</h2>
+        <div class="content has-text-justified">
+          <p>
+            Unlike conventional NLP tasks that prioritize factual accuracy and penalize hallucination, role-playing tasks uniquely to create immersive, fictional scenarios. In role-playing, LLMs must generate narratives aligned with explicit boundaries (e.g., personas, rules) and implicit constraints (e.g., temporal knowledge or character capabilities). For example, a 12-year-old Harry Potter should not recognize Sirius Black or write Python code, even if the underlying LLM possesses this knowledge. Achieving authenticity demands a dual focus: the model must hallucinate creatively to build engaging storylines while rigorously adhering to scenario-specific limitations—rejecting both under-hallucination (resulting in rigid, unimmersive interactions) and excessive hallucination that violates boundaries (e.g., breaking character or introducing factual inconsistencies). Striking this balance defines “controlled hallucination,” where the model operates as a constrained storyteller, blending fictional innovation with discipline.
+          </p>
+          <p>
+            This tutorial bridges the gap between theoretical frameworks and industrial practices, addressing how to cultivate controlled hallucination without compromising reliability. Although excessive hallucination remains unacceptable, undermining role consistency, user trust, or even safety, this task challenges conventional mitigation strategies. We dissect methods across the LLM lifecycle: reinforcing scenario constraints through continued pre-training, fine-tuning dialogue coherence via SFT, optimizing preference alignment to prioritize boundary adherence, adjusting decoding for creativity-within-rules, and designing evaluations to measure hallucination quality (e.g., role alignment, coherency). By focusing on real-world applications, we demonstrate how industry practitioners refine LLMs into adaptable role-playing agents capable of “safe creativity,” ensuring harmonious integration of imaginative storytelling and user-defined guardrails.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule</h2>
+        <p>
+          TBD
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reading List</h2>
+
+        <p>
+          TBD
+        </p>
+        
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ ijcai-roleplay-tutorial,
+  author    = { Wang, Yan and Chen, Nuo and Huang, Xinting and Wu, Hongqiu and Wang, Jiaan and Cui, Leyang and Cai, Deng and Shi, Shuming },
+  title     = { IJCAI 2025 Tutorial: LLM-based Role-Playing from the Perspective of Hallucination },
+  journal   = { IJCAI 2025 },
+  year      = { 2025 },
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/ACL2023-Retrieval-LM" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
